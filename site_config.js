@@ -4,11 +4,9 @@ var conf = {
 
 	description: 'Write about anything',
 
-	url: 'http://caelum.github.io/quasi',
+	url: 'http://caelum.github.io/quasi/',
 
-	img: function() {
-		return this.publisher.img
-	},
+	img: 'img/caelum-logo-fb.png',
 
 	publisher: {
 		name: 'Caelum',

@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta property="og:title" content="{{site.title}}">
-	<meta property="og:site_name" content="{{site.title}} | {{site.publisher.property}}">
+	<meta property="og:site_name" content="{{site.title}} | {{site.publisher.name}}">
 	<meta property="og:description" content="{{site.description}}">
+	<meta property="og:image" content="{{site.url}}{{site.img}}">
 	<meta property="og:url" content="{{site.url}}">
 	<meta property="og:type" content="article">
 	<meta property="article:publisher" content="{{site.publisher.facebook_page}}">
