@@ -18,11 +18,11 @@
 </head>
 <body>
 	<header class="container">
-		<div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+		<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 			<a itemprop="url"  class="main-logo" href="{{site.publisher.website}}">
 				<img itemprop="logo" style="width: 21.2vh" src="{{site.publisher.img}}" alt="{{site.publisher.name}}">
 			</a>
-		</div>
+		</span>
 		<h1 itemprop="name" class="title main-title" style="margin-top: -.2em; margin-left: -.05em;">
 			{{site.title}}
 		</h1>
