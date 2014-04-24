@@ -19,7 +19,7 @@
 <body>
 	<header class="container">
 		<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-			<a itemprop="url"  class="main-logo" href="{{site.publisher.website}}">
+			<a itemprop="url" href="{{site.publisher.website}}">
 				<img itemprop="logo" style="width: 21.2vh" src="{{site.publisher.img}}" alt="{{site.publisher.name}}">
 			</a>
 		</span>
