@@ -172,11 +172,8 @@ header {
 }
 
 .article-section .section-title {
-	float: left;
 	width: 65%;
-	margin-right: 8%;
-	max-width: 12em;
-	min-width: 320px;
+	min-width: 300px;
 }
 
 .article-section:nth-child(2n+1) .section-title {
@@ -185,11 +182,6 @@ header {
 
 .article-section:nth-child(2n) .section-title {
 	border-left-color: #3A6099;
-}
-
-.section-content {
-	overflow: hidden;
-	min-width: 320px;
 }
 
 .article-heading {
@@ -295,9 +287,18 @@ footer .section-title {
 	text-decoration: underline;
 }
 
-@media(min-width: 733px) {
-	.article-section .section-title {
-		width: 37%;
-		min-width: 220px;
+@media(min-width: 1137px) {
+
+	.section-content {
+    float: left;
+    width: 55%;
 	}
+
+	.article-section .section-title {
+    float: left;
+    width: 37%;
+    margin-right: 8%;
+    max-width: 12em;
+	}
+
 }
