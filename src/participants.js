@@ -1,16 +1,18 @@
 var participants = [
-	{	name: "organizadores",
-		people: [
-			{name: "Fulano da Silva", email: "fulano@quasi.com"},
-			{name: "Cicrano do Santos", email: "cicrano@quasi.com"}
-		]
+	{
+		name: "Fulano da Silva",
+		email: "fulano@quasi.com",
+		website: "#",
+		plus: "101434410922232158430",
+		description: "Nam varius commodo est, nec pharetra mauris dictum ac. Aenean in ipsum tellus. Mauris euismod massa nec condimentum blandit. Aenean vitae fringilla libero. Vestibulum non tortor massa. Praesent suscipit mollis tellus, non pharetra leo suscipit imperdiet. Aenean nec purus arcu."
 	},
 
-	{	name: "colaboradores",
-		people:	[
-			{name: "Fulano da Silva", email: "fulano@quasi.com"},
-			{name: "Cicrano dos Santos", email: "cicrano@quasi.com"}
-		]
+	{
+		name: "Cicrano do Santos",
+		email: "cicrano@quasi.com",
+		website: "#",
+		plus: "101434410922232158430",
+		description: "Nam varius commodo est, nec pharetra mauris dictum ac. Aenean in ipsum tellus. Mauris euismod massa nec condimentum blandit. Aenean vitae fringilla libero. Vestibulum non tortor massa. Praesent suscipit mollis tellus, non pharetra leo suscipit imperdiet. Aenean nec purus arcu."
 	}
 ]
 
@@ -23,11 +25,9 @@ function gravatar_url_for(email){
 }
 
 function parsedParticipants() {
-	participants.forEach(function(type){
-		type.people.forEach(function(person){
-			person.img = gravatar_url_for(person.email)
-			delete person.email
-		})
+	participants.forEach(function(person){
+		person.img = gravatar_url_for(person.email)
+		delete person.email
 	}, participants)
 
 	return participants

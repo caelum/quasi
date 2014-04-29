@@ -32,17 +32,16 @@
 	</main>
 	<footer>
 		<section class='container participants'>
-			<h2 class="title section-title">participantes</h2>
-			<p class="participants-text">Agradecemos a todos os colaboradores que de alguma forma participaram da criação.</p>
+			<h2 class="title section-title">autores</h2>
 			{{#each participants}}
-				<h3 class='title label'>{{name}}</h3>
-				<ul class="participants-list">
-					{{#each people}}
-						<li class="participant">
-							<span class="participant-name">{{name}}</span>
-							<img class="participant-img" src="{{img}}" width="80px" height="80px">
-					{{/each}}
-				</ul>
+				<div itemprop="author" itemscope="" itemtype="http://schema.org/Person" class="participant">
+					<div class="participant-info">
+						<a itemprop="name" href="#">{{name}}</a>
+						<a rel="author" href="plus.google.com/{{plus}}?rel=author">google+</a>
+					</div>
+					<img itemprop="image" class="participant-img" src="{{img}}" height="80px" width="80px">
+					<p class="text participants-text">{{description}}</p>
+				</div>
 			{{/each}}
 		</section>
 		<ul class="container sponsors">
