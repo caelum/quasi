@@ -37,7 +37,7 @@
 				<div itemprop="author" itemscope="" itemtype="http://schema.org/Person" class="participant">
 					<div class="participant-info">
 						<a itemprop="name" href="#">{{name}}</a>
-						<a rel="author" href="plus.google.com/{{plus}}?rel=author">google+</a>
+						<a rel="author" href="http://plus.google.com/{{plus}}?rel=author">google+</a>
 					</div>
 					<img itemprop="image" class="participant-img" src="{{img}}" height="80px" width="80px">
 					<p class="text participants-text">{{description}}</p>
